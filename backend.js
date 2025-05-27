@@ -43,6 +43,7 @@ const quizScreen = document.getElementById('quiz-screen');
 const resultsScreen = document.getElementById('results-screen');
 const startBtn = document.getElementById('start-btn');
 const playAgainBtn = document.getElementById('play-again-btn');
+const endQuizBtn = document.getElementById('end-quiz-btn');
 const audioElement = document.getElementById('audio-element');
 const currentQuestionDisplay = document.getElementById('current-question');
 const totalQuestionsDisplay = document.getElementById('total-questions');
@@ -77,6 +78,7 @@ startBtn.addEventListener('click', startGame);
 playAgainBtn.addEventListener('click', resetGame);
 nextBtn.addEventListener('click', nextQuestion);
 skipSongBtn.addEventListener('click', skipSong);
+endQuizBtn.addEventListener('click', endQuiz);
 
 // Add click handlers for option boxes
 optionBoxes.forEach(box => {
@@ -141,6 +143,18 @@ function resetGame() {
     resultsScreen.classList.add('hidden');
     startScreen.classList.remove('hidden');
     currentScoreDisplay.classList.add('hidden');
+}
+
+// End the quiz early
+function endQuiz() {
+    // Pause audio
+    audioElement.pause();
+    
+    // Update UI
+    quizScreen.classList.add('hidden');
+    resultsScreen.classList.remove('hidden');
+    finalScoreDisplay.textContent = gameState.score;
+    maxScoreDisplay.textContent = gameState.maxScore;
 }
 
 // Shuffle array (Fisher-Yates algorithm)

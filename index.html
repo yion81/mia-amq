@@ -14,6 +14,23 @@
     <!-- Dark Overlay -->
     <div class="absolute inset-0 z-0 bg-black bg-opacity-85"></div>
 
+    <div class="absolute top-2 left-4 z-20 text-gray-300 text-sm opacity-80 hover:opacity-100 transition-opacity">
+        <div class="flex flex-col space-y-1">
+            <span>if something is wrong:</span>
+            <div class="flex items-center">
+                <img src="wallp/a3362f7695a6ec091e7cf173d98e5ease.jpg" class="w-10 h-10 rounded-full object-cover mr-2">
+                <span>Discord: yion81_</span>
+            </div>
+            <div class="flex items-center">
+                <div class="w-2 h-2 rounded-full bg-blue-400 mr-2"></div>
+                <a href="https://github.com/yion81" target="_blank" class="text-gray-300 hover:text-white transition-colors">Github: yion81</a>
+            </div>
+            <!-- <div>
+                <a href="https://github.com/yion81" target="_blank" class="text-gray-300 hover:text-white transition-colors">Github: yion81</a>
+            </div> -->
+        </div>
+    </div>
+
     <!-- Content -->
     <div class="relative z-10 flex flex-col items-center justify-center min-h-screen">
         <div class="container max-w-2xl w-full text-center">
@@ -33,6 +50,11 @@
                     
                     <!-- Quiz Screen -->
                     <div id="quiz-screen" class="hidden w-full">
+                        <div class="flex justify-end mb-4">
+                            <button id="end-quiz-btn" class="bg-red-600 hover:bg-red-700 text-white px-4 py-2 rounded-full text-sm transition-colors">
+                                End Quiz
+                            </button>
+                        </div>
                         <div class="track-info my-6 min-h-[60px]">
                             <div id="anime-comparison" class="answer-comparison hidden text-lg">
                                 <div>Anime: <span class="text-gray-300" id="user-anime-answer"></span> / <span class="text-green-400 font-medium" id="actual-anime"></span></div>
@@ -106,12 +128,12 @@
                     
                     <!-- Results Screen -->
                     <div id="results-screen" class="hidden">
-                        <h2 class="text-3xl font-bold mb-6">Quiz Complete!</h2>
+                        <h2 class="text-3xl font-bold mb-6">wowwiez</h2>
                         <div class="score-display text-2xl mb-8">
                             Final Score: <span id="final-score" class="text-green-400 font-bold">0</span>/<span id="max-score" class="font-bold">0</span>
                         </div>
-                        <button id="play-again-btn" class="bg-gray-800 hover:bg-green-500 text-white px-6 py-3 rounded-full font-medium transition-colors">
-                            Play Again?
+                        <button id="play-again-btn" class="bg-gray-800 text-white px-6 py-3 rounded-full font-medium transition-colors">
+                            back to menu
                         </button>
                     </div>
                 </div>
