@@ -63,7 +63,6 @@ const optionBoxes = document.querySelectorAll('.option-box');
 const autocompleteList = document.getElementById('autocomplete-list');
 const currentScoreDisplay = document.getElementById('current-score-display');
 const currentScoreElement = document.getElementById('current-score');
-const possibleScoreElement = document.getElementById('possible-score');
 
 // Custom audio player elements
 const customPlayBtn = document.getElementById('custom-play-btn');
@@ -129,7 +128,6 @@ function startGame() {
     
     // Update score display
     currentScoreElement.textContent = gameState.score;
-    possibleScoreElement.textContent = gameState.currentTrack * 2;
     
     currentQuestionDisplay.textContent = 1;
     totalQuestionsDisplay.textContent = audioFiles.length;
@@ -180,16 +178,15 @@ function loadTrack() {
     // Update progress
     currentQuestionDisplay.textContent = gameState.currentTrack + 1;
     
-    // Update score display
-    possibleScoreElement.textContent = gameState.currentTrack * 2;
-    
     // Set actual track info (hidden until answered)
     actualAnimeDisplay.textContent = track.anime;
     actualSongDisplay.textContent = track.title;
     
     // Load audio
     audioElement.src = track.file;
-    audioElement.volume = 0.3; // Set initial volume to 50%
+
+    // initial vol
+    audioElement.volume = 0.2;
     audioElement.play().catch(e => console.log("Auto-play prevented:", e));
 }
 
