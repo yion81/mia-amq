@@ -13,7 +13,7 @@ const audioFiles = [
     { title: "Transcendance and Hanezeve", file: "miaost/Transcendance and Hanezeve.mp3", anime: "Made in Abyss: Dawn of the Deep Soul" },
     { title: "reBirth", file: "miaost/reBirth.mp3", anime: "Made in Abyss: Dawn of the Deep Soul" },
     { title: "Stairway to the Fifth", file: "miaost/Stairway to the Fifth.mp3", anime: "Made in Abyss: Dawn of the Deep Soul" },
-    { title: "Forever Lost", file: "miaost/Fever Lost.mp3", anime: "Made in Abyss: Dawn of the Deep Soul" },
+    { title: "Forever Lost", file: "miaost/Forever Lost.mp3", anime: "Made in Abyss: Dawn of the Deep Soul" },
     { title: "Old Stories", file: "miaost/Old Stories.mp3", anime: "Made in Abyss: The Golden City of the Scorching Sun" },
     { title: "Gravity", file: "miaost/Gravity.mp3", anime: "Made in Abyss: The Golden City of the Scorching Sun" },
     { title: "VOH", file: "miaost/VOH.mp3", anime: "Made in Abyss: The Golden City of the Scorching Sun" },
