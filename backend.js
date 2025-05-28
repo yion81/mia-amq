@@ -22,7 +22,8 @@ const audioFiles = [
     { title: "Vueko", file: "miaost/Vueko.mp3", anime: "Made in Abyss: The Golden City of the Scorching Sun" },
     { title: "Eyes of Irumyuui", file: "miaost/Eyes of Irumyuui.mp3", anime: "Made in Abyss: The Golden City of the Scorching Sun" },
     { title: "Katachi", file: "miaost/Katachi.mp3", anime: "Made in Abyss: The Golden City of the Scorching Sun" },
-    { title: "Endless Embrace", file: "miaost/Endless Embrace.mp3", anime: "Made in Abyss: The Golden City of the Scorching Sun" }
+    { title: "Endless Embrace", file: "miaost/Endless Embrace.mp3", anime: "Made in Abyss: The Golden City of the Scorching Sun" },
+    { title: "Faputa", file: "miaost/Faputa.mp3", anime: "Made in Abyss: The Golden City of the Scorching Sun" }
 ];
 
 // Game state
@@ -200,7 +201,7 @@ function loadTrack() {
     audioElement.src = track.file;
 
     // initial vol
-    audioElement.volume = 0.2;
+    audioElement.volume = 0.4;
     audioElement.play().catch(e => console.log("Auto-play prevented:", e));
 }
 
