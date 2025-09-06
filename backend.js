@@ -291,6 +291,7 @@ function nextQuestion() {
         resultsScreen.classList.remove('hidden');
         finalScoreDisplay.textContent = gameState.score;
         maxScoreDisplay.textContent = gameState.maxScore;
+        audioElement.pause();
     }
 }
 
